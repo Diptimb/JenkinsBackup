@@ -20,7 +20,8 @@ to_remove=`git status | grep "deleted" | awk '{print $3}'`
 if [ -n "$to_remove" ]; then
  git rm --ignore-unmatch $to_remove
 fi
-
-git commit-m "Automated commit of Jenkins"
+git commit -m "Automated Jenkins commit"
 
 git push -q -u origin master
+
+ 
