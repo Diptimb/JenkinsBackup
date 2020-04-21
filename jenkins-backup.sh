@@ -31,7 +31,7 @@ fi
 fi
 
 # mark as deleted anything that's been, well, deleted
-to_remove=`git status | grep "deleted" | awk '{print $3}"
+to_remove=`git status | grep "deleted" | awk '{print $3}'`
 
 if [ -n "$to_remove" ]; then
  git rm --ignore-unmatch $to_remove
